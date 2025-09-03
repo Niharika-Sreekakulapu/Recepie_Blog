@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #795548;
+    --accent-color: #FFC107;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --card-bg-color: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Updated Header Styles */
+.main-header {
+    background-color: #3e2723; /* A dark, earthy brown */
+    color: #ffffff; /* White text for contrast */
+    padding: 1.5rem 3rem;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Also update the site title color for better readability on the dark background */
+.site-title {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    margin: 0;
+    color: #f8f8f8; /* A very light gray to stand out */
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+
+.search-container {
+    padding: 0;
+}
+
+#recipe-search {
+    width: 300px;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#recipe-search:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recipe-card {
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.recipe-card-content {
+    padding: 1.5rem;
+}
+
+.recipe-card h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+}
+
+.recipe-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
