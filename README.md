@@ -1,6 +1,5 @@
 # Flavorful Finds - A Recipe Blog
 
-!(https://github.com/your-username/your-repo-name/blob/main/images/header-screenshot.jpg?raw=true)
 
 ## Project Overview
 
